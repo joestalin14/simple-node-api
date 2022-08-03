@@ -1,0 +1,27 @@
+{
+	"name": "simple-node-api",
+	"version": "1.0.0",
+	"description": "this is simple api for learn",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joestalin14/simple-node-api.git"
+	},
+	"author": "joestalin14",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/joestalin14/simple-node-api/issues"
+	},
+	"homepage": "https://github.com/joestalin14/simple-node-api#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.19"
+	}
+}
