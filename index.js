@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
 const cors = require('cors')
+
 const categoriesRoutes = require('./routes/categories')
+const categoryRoutes = require('./routes/category')
 
 const app = express()
 
@@ -14,6 +16,7 @@ app.get('/', (request, response) => {
 })
 
 app.use('/categories', categoriesRoutes)
+app.use('/category', categoryRoutes)
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
 const PORT = process.env.PORT || 3030

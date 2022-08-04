@@ -25,7 +25,10 @@ router.get('/', (request, response) => {
 		)
 	)
 	const result = getCategoriesData(data)
-	response.send(result)
+	response.send({
+		status: 200,
+		data: result
+	})
 })
 
 module.exports = router
